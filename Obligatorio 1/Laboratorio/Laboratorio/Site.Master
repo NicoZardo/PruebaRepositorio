@@ -1,0 +1,88 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Laboratorio.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="~/Styles/Site.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    Laboratorio de analisis clinicos&nbsp;
+                </h1>
+            </div>
+            <div class="loginDisplay">
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Menu ID="NavigationMenu" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Paginas/PaginaPrincipal.aspx" 
+                            Text="Pagina Principal" Value="Pagina Principal"/>
+                        <asp:MenuItem 
+                            Text="Pacientes" Value="Pacientes">
+                            <asp:MenuItem NavigateUrl="~/Paginas/RegistroPaciente.aspx" 
+                                Text="Nuevo Paciente" Value="Nuevo Paciente"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem Text="Extraccion" Value="Extraccion">
+                            <asp:MenuItem NavigateUrl="~/Paginas/NuevaExtraccion.aspx" 
+                                Text="Nueva Extraccion" Value="Nueva Extraccion"></asp:MenuItem>
+                            <asp:MenuItem Text="Cancelar Extraccion" Value="Cancelar Extraccion" 
+                                NavigateUrl="~/Paginas/CancelarExtracciones.aspx">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem NavigateUrl="~/Paginas/PaginasLaboratorista/EnviarResultados.aspx" 
+                            Text="Envios" Value="Envios"></asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+                <asp:Menu ID="Menu1" runat="server" CssClass="menu" EnableViewState="false" IncludeStyleBlock="false" Orientation="Horizontal" Visible="false">
+                    <Items>
+                        <asp:MenuItem NavigateUrl="~/Paginas/PaginasLaboratorista/PaginaInicio.aspx" 
+                            Text="Pagina Inicio" Value="Pagina Inicio"/>
+                        <asp:MenuItem 
+                            Text="Empleados" Value="Empleados">
+                            <asp:MenuItem NavigateUrl="~/Paginas/PaginasLaboratorista/NuevoEmpleado.aspx" 
+                                Text="Nuevo Empleado" Value="Nuevo Empleado"></asp:MenuItem>
+                            <asp:MenuItem Text="Modificar Informacion" Value="Modificar Informacion" 
+                                NavigateUrl="~/Paginas/PaginasLaboratorista/ModificarInformacion.aspx">
+                            </asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem 
+                            Text="Instituciones Medicas" Value="Instituciones Medicas">
+                            <asp:MenuItem NavigateUrl="~/Paginas/PaginasLaboratorista/RegistroInstitucion.aspx" 
+                                Text="Nuevo Registro" Value="Nuevo Registro"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem 
+                            Text="Analisis" Value="Analisis">
+                            <asp:MenuItem NavigateUrl="~/Paginas/PaginasLaboratorista/NuevaReferencia.aspx" 
+                                Text="Nueva Referencia" Value="Nueva Referencia"></asp:MenuItem>
+                            <asp:MenuItem NavigateUrl="~/Paginas/PaginasLaboratorista/NuevoAnalisis.aspx" 
+                                Text="Analisis a Pacientes" Value="Analisis a Pacientes"></asp:MenuItem>
+                        </asp:MenuItem>
+                        <asp:MenuItem 
+                            Text="Laboratorista" Value="Laboratorista">
+                            <asp:MenuItem NavigateUrl="~/Paginas/PaginasLaboratorista/NuevoLaboratorista.aspx" 
+                                Text="Nuevo Registro" Value="Nuevo Registro"></asp:MenuItem>
+                        </asp:MenuItem>
+                    </Items>
+                </asp:Menu>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server"/>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,299 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A95F120B-32ED-4822-B268-28AD402FF201}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Laboratorio</RootNamespace>
+    <AssemblyName>Laboratorio</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="About.aspx" />
+    <Content Include="Account\ChangePassword.aspx" />
+    <Content Include="Account\ChangePasswordSuccess.aspx" />
+    <Content Include="Account\Login.aspx" />
+    <Content Include="Account\Register.aspx" />
+    <Content Include="BDLab.accdb" />
+    <Content Include="Iconos\aceptar.png" />
+    <Content Include="Iconos\agregar.png" />
+    <Content Include="Iconos\cancelar.png" />
+    <Content Include="Iconos\documentos.png" />
+    <Content Include="Paginas\CancelarExtracciones.aspx" />
+    <Content Include="Paginas\ModificarPaciente.aspx" />
+    <Content Include="Paginas\NuevaExtraccion.aspx" />
+    <Content Include="Paginas\PaginaPrincipal.aspx" />
+    <Content Include="Paginas\PaginasLaboratorista\EnviarResultados.aspx" />
+    <Content Include="Paginas\PaginasLaboratorista\ModificarInformacion.aspx" />
+    <Content Include="Paginas\PaginasLaboratorista\NuevoAnalisis.aspx" />
+    <Content Include="Paginas\PaginasLaboratorista\NuevaReferencia.aspx" />
+    <Content Include="Paginas\PaginasLaboratorista\NuevoEmpleado.aspx" />
+    <Content Include="Paginas\PaginasLaboratorista\NuevoLaboratorista.aspx" />
+    <Content Include="Paginas\PaginasLaboratorista\PaginaInicio.aspx" />
+    <Content Include="Paginas\PaginasLaboratorista\RegistroInstitucion.aspx" />
+    <Content Include="Paginas\RegistroPaciente.aspx" />
+    <Content Include="Styles\Site.css" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Scripts\jquery-1.4.1-vsdoc.js" />
+    <Content Include="Scripts\jquery-1.4.1.js" />
+    <Content Include="Scripts\jquery-1.4.1.min.js" />
+    <Content Include="Web.config" />
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.aspx.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="About.aspx.designer.cs">
+      <DependentUpon>About.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePassword.aspx.designer.cs">
+      <DependentUpon>ChangePassword.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\ChangePasswordSuccess.aspx.designer.cs">
+      <DependentUpon>ChangePasswordSuccess.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Login.aspx.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Login.aspx.designer.cs">
+      <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Account\Register.aspx.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Account\Register.aspx.designer.cs">
+      <DependentUpon>Register.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Clases\Analizar\Analisis.cs" />
+    <Compile Include="Clases\Analizar\FachadaAnalisis.cs" />
+    <Compile Include="Clases\Analizar\PersistenciaAnalisisOLEDB.cs" />
+    <Compile Include="Clases\Clientes\FachadaPaciente.cs" />
+    <Compile Include="Clases\Clientes\Paciente.cs" />
+    <Compile Include="Clases\Clientes\PersistenciaClienteOLEDB.cs" />
+    <Compile Include="Clases\Empleados\Empleado.cs" />
+    <Compile Include="Clases\Empleados\FachadaEmpleado.cs" />
+    <Compile Include="Clases\Empleados\PersitenciaEmpleadoOLEDB.cs" />
+    <Compile Include="Clases\Envios\Envio.cs" />
+    <Compile Include="Clases\Envios\FachadaEnvio.cs" />
+    <Compile Include="Clases\Envios\PersistenciaEnvioOLEDB.cs" />
+    <Compile Include="Clases\Extracciones\Extraccion.cs" />
+    <Compile Include="Clases\Extracciones\FachadaExtracciones.cs" />
+    <Compile Include="Clases\Extracciones\PersistenciaExtraccionOLEDB.cs" />
+    <Compile Include="Clases\Instituciones\FachadaInstitucion.cs" />
+    <Compile Include="Clases\Instituciones\Institucion.cs" />
+    <Compile Include="Clases\Instituciones\PersistenciaInstitucionOLEDB.cs" />
+    <Compile Include="Clases\Laboratoristas\FachadaLaboratorista.cs" />
+    <Compile Include="Clases\Laboratoristas\Laboratorista.cs" />
+    <Compile Include="Clases\Laboratoristas\PersistenciaLaboratoristaOLEDB.cs" />
+    <Compile Include="Clases\Muestras\FachadaMuestra.cs" />
+    <Compile Include="Clases\Muestras\Muestra.cs" />
+    <Compile Include="Clases\Muestras\PersistenciaMuestraOLEDB.cs" />
+    <Compile Include="Clases\Referencias\FachadaReferencia.cs" />
+    <Compile Include="Clases\Referencias\PersistenciaReferenciaOLEDB.cs" />
+    <Compile Include="Clases\Referencias\Referencia.cs" />
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\CancelarExtracciones.aspx.cs">
+      <DependentUpon>CancelarExtracciones.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\CancelarExtracciones.aspx.designer.cs">
+      <DependentUpon>CancelarExtracciones.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\ModificarPaciente.aspx.cs">
+      <DependentUpon>ModificarPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\ModificarPaciente.aspx.designer.cs">
+      <DependentUpon>ModificarPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\NuevaExtraccion.aspx.cs">
+      <DependentUpon>NuevaExtraccion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\NuevaExtraccion.aspx.designer.cs">
+      <DependentUpon>NuevaExtraccion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginaPrincipal.aspx.cs">
+      <DependentUpon>PaginaPrincipal.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginaPrincipal.aspx.designer.cs">
+      <DependentUpon>PaginaPrincipal.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\EnviarResultados.aspx.cs">
+      <DependentUpon>EnviarResultados.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\EnviarResultados.aspx.designer.cs">
+      <DependentUpon>EnviarResultados.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\ModificarInformacion.aspx.cs">
+      <DependentUpon>ModificarInformacion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\ModificarInformacion.aspx.designer.cs">
+      <DependentUpon>ModificarInformacion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\NuevoAnalisis.aspx.cs">
+      <DependentUpon>NuevoAnalisis.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\NuevoAnalisis.aspx.designer.cs">
+      <DependentUpon>NuevoAnalisis.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\NuevaReferencia.aspx.cs">
+      <DependentUpon>NuevaReferencia.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\NuevaReferencia.aspx.designer.cs">
+      <DependentUpon>NuevaReferencia.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\NuevoEmpleado.aspx.cs">
+      <DependentUpon>NuevoEmpleado.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\NuevoEmpleado.aspx.designer.cs">
+      <DependentUpon>NuevoEmpleado.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\NuevoLaboratorista.aspx.cs">
+      <DependentUpon>NuevoLaboratorista.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\NuevoLaboratorista.aspx.designer.cs">
+      <DependentUpon>NuevoLaboratorista.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\PaginaInicio.aspx.cs">
+      <DependentUpon>PaginaInicio.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\PaginaInicio.aspx.designer.cs">
+      <DependentUpon>PaginaInicio.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\RegistroInstitucion.aspx.cs">
+      <DependentUpon>RegistroInstitucion.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\PaginasLaboratorista\RegistroInstitucion.aspx.designer.cs">
+      <DependentUpon>RegistroInstitucion.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Paginas\RegistroPaciente.aspx.cs">
+      <DependentUpon>RegistroPaciente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Paginas\RegistroPaciente.aspx.designer.cs">
+      <DependentUpon>RegistroPaciente.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Account\Web.config" />
+    <Content Include="Site.Master" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1450</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
