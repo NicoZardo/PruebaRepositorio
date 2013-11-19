@@ -17,6 +17,8 @@
 </p>
     <p>
         <asp:Label ID="lblinfo" runat="server"></asp:Label>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Label ID="Label1" runat="server" Text="PRUEBA GITHUB"></asp:Label>
 </p>
     <p>
         <asp:Button ID="btnpago" runat="server" onclick="btnpago_Click" Text="Pagar" />
